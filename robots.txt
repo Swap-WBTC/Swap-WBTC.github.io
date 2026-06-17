@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swap-wbtc.github.io/sitemap.xml
