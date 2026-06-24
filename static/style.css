@@ -651,3 +651,18 @@ a.trust-chip:hover { border-color: var(--accent-deep); color: var(--accent-deep)
 .intent-a li{position:relative}
 
 :root{--accent:#FF007A;--accent-2:#D60066;--accent-deep:#E6006E;--accent-ink:#FFFFFF;--accent-soft:rgba(255,0,122,0.13);--accent-line:rgba(214,0,102,0.32);--accent-glow:rgba(255,0,122,0.45);--hero-glow:rgba(255,0,122,0.10);--hero-glow-2:rgba(255,0,122,0.06);}
+
+/* === SEOGEO-TEXTURE BEGIN === */
+/* treatment T3 */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(color-mix(in srgb,var(--ink) 5%,transparent) 1px,transparent 1px),
+    linear-gradient(90deg,color-mix(in srgb,var(--ink) 5%,transparent) 1px,transparent 1px);
+  background-size:26px 26px;
+  -webkit-mask:radial-gradient(120% 80% at 50% 0%,#000 0%,transparent 70%);
+          mask:radial-gradient(120% 80% at 50% 0%,#000 0%,transparent 70%);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(42rem 30rem at 88% -8%,color-mix(in srgb,var(--accent) 18%,transparent),transparent 60%),
+    radial-gradient(38rem 32rem at -6% 6%,color-mix(in srgb,var(--accent) 11%,transparent),transparent 58%);}
+/* === SEOGEO-TEXTURE END === */
