@@ -1,22 +1,22 @@
 {
- "name": "Uniswap",
- "short_name": "Uniswap",
- "start_url": "/",
- "display": "standalone",
- "background_color": "#FFFFFF",
- "theme_color": "#FFFFFF",
- "icons": [
-  {
-   "src": "static/icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "purpose": "any maskable"
-  },
-  {
-   "src": "static/icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any maskable"
-  }
- ]
+  "name": "Simple Swap",
+  "short_name": "Simple Swap",
+  "description": "Simple Swap exchanges one cryptocurrency for another in a few quick steps.",
+  "start_url": "https://swap-wbtc.github.io/",
+  "scope": "https://swap-wbtc.github.io/",
+  "display": "standalone",
+  "background_color": "#F7F4EF",
+  "theme_color": "#2E6FF2",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
