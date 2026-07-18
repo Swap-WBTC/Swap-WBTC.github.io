@@ -3,440 +3,309 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swap WBTC - Wrapped Bitcoin Swap App</title>
-  <meta name="description" content="Swap WBTC in a non-custodial DeFi app: compare live routes, trade from your wallet, and keep control from quote to confirmation.">
-  <meta name="theme-color" content="#FBFAF7">
+  <title>Swap WBTC — Swap WBTC on-chain</title>
+  <meta name="description" content="Swap WBTC means exchanging Wrapped Bitcoin for another crypto asset, or another asset for WBTC, through a supported exchange or on-chain liquidity ven">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="theme-color" content="#eef0f3">
   <link rel="canonical" href="https://swap-wbtc.github.io/">
-  <meta name="robots" content="index,follow">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="prefetch" href="dashboard/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Swap WBTC - Wrapped Bitcoin Swap App">
-  <meta property="og:description" content="Swap WBTC from a non-custodial DeFi app with live route review and wallet-native confirmation.">
-  <meta property="og:image" content="og-cover.png">
-  <meta property="og:url" content="https://swap-wbtc.github.io/">
+  <link rel="prefetch" href="dashboard/index.html">
+  <link rel="preconnect" href="https://defillama.com/" crossorigin>
+  <link rel="preconnect" href="https://coins.llama.fi" crossorigin>
+  <meta property="og:type" content="website"><meta property="og:url" content="https://swap-wbtc.github.io/">
+  <meta property="og:title" content="Swap WBTC — Swap WBTC on-chain">
+  <meta property="og:description" content="Swap WBTC means exchanging Wrapped Bitcoin for another crypto asset, or another asset for WBTC, through a supported exchange or on-chain liquidity ven">
+  <meta property="og:site_name" content="Swap WBTC dashboard"><meta property="og:image" content="https://swap-wbtc.github.io/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Swap WBTC — Swap WBTC on-chain"><meta name="twitter:description" content="Swap WBTC means exchanging Wrapped Bitcoin for another crypto asset, or another asset for WBTC, through a supported exchange or on-chain liquidity ven"><meta name="twitter:image" content="https://swap-wbtc.github.io/og-cover.png">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebSite","@id":"https://swap-wbtc.github.io/#website","url":"https://swap-wbtc.github.io/","name":"Swap WBTC dashboard","inLanguage":"en-US"},
+      {"@type":"Thing","@id":"https://swap-wbtc.github.io/#brand","name":"Swap WBTC",
+       "description":"Swap WBTC means exchanging Wrapped Bitcoin for another crypto asset, or another asset for WBTC, through a supported exchange or on-chain liquidity venue.",
+       "sameAs":["https://wbtc.network/", "https://docs.wbtc.network/", "https://x.com/WrappedBTC", "https://github.com/solana-labs/wbtc"]},
+      {"@type":"WebApplication","@id":"https://swap-wbtc.github.io/#widget","name":"Swap WBTC preview","applicationCategory":"FinanceApplication","operatingSystem":"Any","url":"https://swap-wbtc.github.io/#route-preview","isPartOf":{"@id":"https://swap-wbtc.github.io/#webpage"},"featureList":["Preview the route","Reverse the direction","Open the app"]},
+      {"@type":"WebPage","@id":"https://swap-wbtc.github.io/#webpage","url":"https://swap-wbtc.github.io/","name":"Swap WBTC \u2014 Swap WBTC on-chain","description":"Swap WBTC means exchanging Wrapped Bitcoin for another crypto asset, or another asset for WBTC, through a supported exchange or on-chain liquidity ven","isPartOf":{"@id":"https://swap-wbtc.github.io/#website"},"about":{"@id":"https://swap-wbtc.github.io/#brand"},"mainEntity":{"@id":"https://swap-wbtc.github.io/#brand"},"inLanguage":"en-US","mentions":[{"@type":"Thing","name":"ERC-20","sameAs":"https://ethereum.org/developers/docs/standards/tokens/erc-20/"},{"@type":"Thing","name":"Decentralized exchange","sameAs":"https://ethereum.org/developers/docs/design-and-ux/dex-design-best-practice/"}]},
+      {"@type":"ItemList","@id":"https://swap-wbtc.github.io/#resources","name":"Swap WBTC \u2014 resources & references","itemListElement":[{"@type":"ListItem","position":1,"name":"Mint and burn mechanism","url":"https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism"},{"@type":"ListItem","position":2,"name":"Wrapped Tokens whitepaper","url":"https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf"},{"@type":"ListItem","position":3,"name":"Ethereum token swaps","url":"https://ethereum.org/guides/how-to-swap-tokens/"},{"@type":"ListItem","position":4,"name":"WBTC market data","url":"https://www.coingecko.com/en/coins/wrapped-bitcoin"},{"@type":"ListItem","position":5,"name":"WBTC protocol TVL","url":"https://defillama.com/protocol/wbtc"},{"@type":"ListItem","position":6,"name":"WBTC contract explorer","url":"https://eth.blockscout.com/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"},{"@type":"ListItem","position":7,"name":"Where to get WBTC","url":"https://docs.wbtc.network/using-wbtc/where-to-get-wbtc"},{"@type":"ListItem","position":8,"name":"Convert BTC to WBTC","url":"https://docs.wbtc.network/using-wbtc/how-to-convert-btc-to-wbtc"},{"@type":"ListItem","position":9,"name":"Convert WBTC to BTC","url":"https://docs.wbtc.network/using-wbtc/how-to-convert-wbtc-to-btc"},{"@type":"ListItem","position":10,"name":"Proof of reserve","url":"https://docs.wbtc.network/overview/proof-of-reserve-and-transparency-dashboard"},{"@type":"ListItem","position":11,"name":"WBTC security audit","url":"https://www.chainsecurity.com/security-audit/wrapped-bitcoin-wbtc"},{"@type":"ListItem","position":12,"name":"Solana WBTC source","url":"https://github.com/solana-labs/wbtc"}]}
+    ]
+  }
+  </script>
   <style>
-  :root{
-    --bg:#FBFAF7; --panel:#FFFFFF; --field:#F7F4EE;
-    --ink:#1A1512; --muted:#6E665E; --faint:#9C958B;
-    --line:rgba(26,21,18,.09); --line-2:rgba(26,21,18,.05);
-    --accent:#F7931A; --accent-ink:#B66C13; --accent-soft:rgba(247,147,26,.10);
-    --pos:#15A34A;
-    --radius:22px; --radius-sm:14px;
-    --shadow-card:0 1px 0 rgba(26,21,18,.03), 0 34px 64px -30px rgba(58,38,12,.32), 0 10px 24px -18px rgba(58,38,12,.20);
-    --shadow-soft:0 1px 0 rgba(26,21,18,.02), 0 20px 44px -32px rgba(58,38,12,.30);
-    --ui:"Space Grotesk",-apple-system,system-ui,sans-serif;
-    --body:"Inter",-apple-system,system-ui,sans-serif;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0; overflow-x:hidden}
-  body{
-    background:var(--bg); color:var(--ink); font-family:var(--body); line-height:1.5;
-    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; position:relative;
-  }
-  a{color:inherit; text-decoration:none}
-  a.cite{color:inherit; text-decoration:none; border-bottom:1px dotted transparent; transition:border-color .15s ease}
-  a.cite:hover{border-bottom-color:var(--faint)}
-  img{display:block; max-width:100%}
-  button{font:inherit; cursor:pointer; border:none; background:none; color:inherit}
-  h1,h2,h3,p{margin:0}
-
-  /* ---------- texture background (no external assets) ---------- */
-  .bg{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
-  .bg .glow{
-    position:absolute; inset:0;
-    background:
-      radial-gradient(680px 460px at 50% 34%, rgba(247,147,26,.10), transparent 64%),
-      radial-gradient(900px 540px at 88% -6%, rgba(247,147,26,.07), transparent 60%),
-      radial-gradient(760px 480px at -4% 4%, rgba(247,147,26,.05), transparent 60%);
-  }
-  .bg .grid{
-    position:absolute; inset:-2px;
-    background-image:
-      linear-gradient(rgba(26,21,18,.040) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(26,21,18,.040) 1px, transparent 1px);
-    background-size:130px 130px;
-    -webkit-mask-image:radial-gradient(120% 80% at 50% 16%, #000 46%, transparent 90%);
-            mask-image:radial-gradient(120% 80% at 50% 16%, #000 46%, transparent 90%);
-  }
-
-  /* ---------- top bar ---------- */
-  .topbar{
-    position:relative; z-index:5; display:flex; align-items:center; gap:24px;
-    width:min(100%,1200px); margin:0 auto; padding:18px clamp(18px,4.2vw,56px) 10px;
-  }
-  .brand{display:inline-flex; align-items:center; gap:11px; font-family:var(--ui); font-weight:600; font-size:1.05rem; letter-spacing:-.01em}
-  .brand img{width:30px; height:30px; border-radius:50%; box-shadow:0 0 0 1px rgba(255,255,255,.8), 0 8px 18px -12px rgba(247,147,26,.5)}
-  .spacer{flex:1}
-  .nav{display:flex; align-items:center; gap:clamp(16px,2.6vw,30px)}
-  .nav a{font-family:var(--ui); font-weight:500; font-size:.93rem; color:var(--muted); transition:color .16s ease}
-  .nav a:hover{color:var(--accent-ink)}
-
-  /* ---------- shared section frame ---------- */
-  .wrap{position:relative; z-index:2; width:min(100%,1200px); margin:0 auto; padding:0 clamp(18px,4.2vw,56px)}
-  .sec{padding-top:clamp(48px,7vh,88px); padding-bottom:clamp(48px,7vh,88px)}
-  .sec-head{max-width:62ch; margin:0 0 clamp(26px,4vh,40px)}
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:9px; font-family:var(--ui); font-weight:600;
-    font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-ink);
-  }
-  .eyebrow .dot{width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px var(--accent-soft)}
-  .eyebrow svg{width:15px; height:15px}
-  .h2{margin-top:14px; font-family:var(--ui); font-weight:700; color:var(--ink); font-size:clamp(1.9rem,3.4vw,2.7rem); line-height:1.04; letter-spacing:-.02em}
-  .sec-head p{margin-top:14px; color:var(--muted); font-size:clamp(1rem,1.3vw,1.12rem); line-height:1.6}
-
-  /* ---------- hero ---------- */
-  .hero{
-    display:grid; grid-template-columns:minmax(0,1.05fr) minmax(360px,.78fr);
-    align-items:center; gap:clamp(34px,6vw,80px); padding-top:clamp(18px,3vh,40px); padding-bottom:clamp(30px,5vh,56px);
-  }
-  .copy{min-width:0}
-  .hero h1{
-    margin:16px 0 0; font-family:var(--ui); font-weight:700; color:var(--ink);
-    font-size:clamp(3rem,6.4vw,5.2rem); line-height:.98; letter-spacing:-.03em;
-  }
-  .deck{max-width:44ch; margin:20px 0 0; color:var(--muted); font-size:clamp(1.04rem,1.35vw,1.18rem); line-height:1.6}
-  .deck strong{color:var(--ink); font-weight:600; box-shadow:inset 0 -.36em 0 var(--accent-soft)}
-  .chips{list-style:none; margin:26px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:9px}
-  .chips li{
-    display:inline-flex; align-items:center; gap:7px; min-height:38px; padding:8px 14px;
-    border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.7);
-    font-family:var(--ui); font-weight:500; font-size:.88rem; color:var(--ink);
-  }
-  .chips li::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--accent)}
-  .cta-row{display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:30px 0 0}
-  .primary{
-    display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:54px; padding:0 28px;
-    border-radius:14px; background:var(--ink); color:#fff; font-family:var(--ui); font-weight:600; font-size:1.02rem;
-    letter-spacing:-.01em; box-shadow:0 16px 30px -16px rgba(26,21,18,.7); transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
-  }
-  .primary:hover{transform:translateY(-1px); filter:brightness(1.08); box-shadow:0 22px 38px -16px rgba(26,21,18,.8)}
-  .primary svg{width:17px; height:17px}
-  .ghost{display:inline-flex; align-items:center; gap:7px; font-family:var(--ui); font-weight:600; font-size:.98rem; color:var(--muted); transition:color .16s ease}
-  .ghost:hover{color:var(--accent-ink)}
-  .ghost svg{width:15px; height:15px}
-
-  /* ---------- preview card ---------- */
-  .card{
-    width:min(100%,396px); margin:0 0 0 auto; padding:14px; background:var(--panel);
-    border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow-card); position:relative;
-  }
-  .card::before{content:""; position:absolute; inset:0 0 auto; height:1px; border-radius:var(--radius) var(--radius) 0 0;
-    background:linear-gradient(90deg, transparent, rgba(247,147,26,.35), transparent)}
-  .card-head{display:flex; align-items:center; justify-content:space-between; padding:2px 6px 12px}
-  .card-head .ct{font-family:var(--ui); font-weight:600; font-size:1.04rem; letter-spacing:-.01em}
-  .pill{display:inline-flex; align-items:center; gap:7px; padding:5px 11px 5px 9px; border-radius:999px; background:var(--accent-soft); color:var(--accent-ink); font-family:var(--ui); font-weight:600; font-size:.76rem}
-  .pill .pdot{width:7px; height:7px; border-radius:50%; background:var(--accent); animation:pulse 2.4s ease-out infinite}
-  .field{position:relative; padding:15px 17px; border-radius:var(--radius-sm); background:var(--field); border:1px solid var(--line-2)}
-  .field + .field{margin-top:6px}
-  .flabel{display:block; color:var(--muted); font-size:.82rem; font-weight:500; margin-bottom:12px}
-  .frow{display:flex; align-items:center; justify-content:space-between; gap:12px}
-  .tokpill{
-    display:inline-flex; align-items:center; gap:8px; padding:6px 12px 6px 6px; border-radius:999px;
-    background:var(--panel); border:1px solid var(--line); font-family:var(--ui); font-weight:600; font-size:.98rem;
-    box-shadow:0 1px 0 rgba(26,21,18,.02); transition:.16s;
-  }
-  .tokpill:hover{border-color:rgba(247,147,26,.3)}
-  .tokpill img{width:24px; height:24px; border-radius:50%}
-  .tokpill .cv{color:var(--faint); font-size:.8em; margin-left:1px}
-  .ghostval{color:var(--faint); font-size:.9rem; font-weight:450; white-space:nowrap}
-  .route{position:relative; height:0}
-  .switch{
-    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:40px; height:40px; border-radius:50%; z-index:3;
-    background:var(--panel); border:4px solid var(--panel); box-shadow:0 0 0 1px var(--line), 0 8px 18px -10px rgba(58,38,12,.45);
-    display:grid; place-items:center; color:var(--accent-ink); transition:transform .25s ease, box-shadow .2s ease;
-  }
-  .switch svg{width:17px; height:17px}
-  .switch:hover{transform:translate(-50%,-50%) rotate(180deg); box-shadow:0 0 0 1px rgba(247,147,26,.3), 0 12px 22px -10px rgba(58,38,12,.5)}
-  .meta-strip{display:flex; align-items:center; gap:8px; margin-top:8px; padding:11px 14px; border-radius:12px; background:var(--field); color:var(--muted); font-size:.82rem}
-  .meta-strip svg{width:15px; height:15px; color:var(--accent-ink); flex:none}
-  .cta{
-    display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:8px; min-height:52px;
-    border-radius:14px; background:var(--ink); color:#fff; font-family:var(--ui); font-weight:600; font-size:1rem;
-    letter-spacing:-.01em; box-shadow:0 14px 28px -16px rgba(26,21,18,.65); transition:transform .18s ease, filter .18s ease;
-  }
-  .cta:hover{transform:translateY(-1px); filter:brightness(1.08)}
-  .note{margin:11px 0 2px; text-align:center; color:var(--faint); font-size:.78rem}
-
-  /* ---------- how it works (steps) ---------- */
-  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-  .step{position:relative; padding:24px 22px; background:var(--panel); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow-soft)}
-  .step .num{font-family:var(--ui); font-weight:700; font-size:.92rem; color:var(--accent-ink); letter-spacing:.02em}
-  .step h3{margin:12px 0 8px; font-family:var(--ui); font-weight:600; font-size:1.12rem; color:var(--ink); letter-spacing:-.01em}
-  .step p{color:var(--muted); font-size:.94rem; line-height:1.55}
-
-  /* ---------- benefits ---------- */
-  .benefits{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-  .ben{padding:24px 22px; background:var(--panel); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow-soft)}
-  .ben .ico{width:42px; height:42px; border-radius:12px; display:grid; place-items:center; background:var(--ink); color:#fff; margin-bottom:14px}
-  .ben .ico svg{width:20px; height:20px}
-  .ben h3{font-family:var(--ui); font-weight:600; font-size:1.1rem; color:var(--ink); letter-spacing:-.01em}
-  .ben p{margin-top:8px; color:var(--muted); font-size:.94rem; line-height:1.55}
-
-  /* ---------- FAQ (2-col, open) ---------- */
-  .faq{display:grid; grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr); gap:clamp(28px,5vw,64px); align-items:start}
-  .faq-aside{position:sticky; top:30px}
-  .faq-aside .h2{font-size:clamp(1.7rem,2.8vw,2.2rem)}
-  .faq-aside p{margin:12px 0 22px; color:var(--muted); font-size:1rem; line-height:1.6}
-  .faq-list{display:grid; gap:12px}
-  .qa{padding:20px 22px; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-soft)}
-  .qa .qn{font-family:var(--ui); font-weight:700; font-size:.82rem; color:var(--accent-ink); letter-spacing:.04em}
-  .qa h3{margin:8px 0 8px; font-family:var(--ui); font-weight:600; font-size:1.06rem; color:var(--ink); letter-spacing:-.01em}
-  .qa p{color:var(--muted); font-size:.95rem; line-height:1.6}
-  .qa a{color:var(--accent-ink); font-weight:600; box-shadow:inset 0 -.34em 0 var(--accent-soft)}
-
-  /* ---------- related ---------- */
-  .related{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-  .rel{display:flex; flex-direction:column; gap:7px; padding:22px; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-soft); transition:transform .16s ease, border-color .16s ease}
-  .rel:hover{transform:translateY(-2px); border-color:rgba(247,147,26,.3)}
-  .rel .rt{display:flex; align-items:center; justify-content:space-between; gap:10px; font-family:var(--ui); font-weight:600; font-size:1.05rem; color:var(--ink); letter-spacing:-.01em}
-  .rel .rt svg{width:16px; height:16px; color:var(--accent-ink); flex:none}
-  .rel p{color:var(--muted); font-size:.9rem; line-height:1.5}
-
-  /* ---------- footer ---------- */
-  .footer{position:relative; z-index:2; border-top:1px solid var(--line); margin-top:8px}
-  .footer .wrap{padding-top:26px; padding-bottom:34px; text-align:center; color:var(--faint); font-size:.84rem}
-  .footer b{color:var(--muted); font-weight:600}
-
-  @keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-soft)} 70%{box-shadow:0 0 0 8px rgba(247,147,26,0)} 100%{box-shadow:0 0 0 0 rgba(247,147,26,0)}}
-
-  @media (max-width:920px){
-    .nav{display:none}
-    .hero{grid-template-columns:1fr; gap:30px}
-    .card{margin:0 auto}
-    .hero h1{font-size:clamp(2.8rem,12vw,3.8rem)}
-    .deck{max-width:none}
-    .steps,.benefits,.related{grid-template-columns:1fr}
-    .faq{grid-template-columns:1fr; gap:26px}
-    .faq-aside{position:static}
-  }
-  @media (max-width:430px){
-    .chips{gap:7px}
-    .primary,.ghost{width:100%; justify-content:center}
-  }
-  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important; transition-duration:.01ms!important}}
+:root{
+  --bg:#eef0f3; --bg-2:#e7eaef; --panel:#ffffff; --field:#f1f3f7; --field-2:#e9edf2;
+  --ink:#151a21; --text:#414954; --muted:#6a727d; --faint:#9aa2ad;
+  --line:rgba(20,26,33,.09); --line-2:rgba(20,26,33,.14);
+  --accent:#f7931a; --accent-ink:#683d09; --accent-soft:rgba(247,147,26,0.13); --accent-glow:rgba(247,147,26,0.3);
+  --cta:#171a20; --cta-hover:#0a0c10; --cta-ink:#ffffff;
+  --shadow-card:0 1px 0 rgba(20,26,33,.02), 0 40px 80px -42px rgba(24,32,48,.40), 0 14px 30px -22px rgba(24,32,48,.24);
+  --shadow-pop:0 24px 60px -26px rgba(24,32,48,.38), 0 8px 20px -12px rgba(24,32,48,.22);
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ease: cubic-bezier(0.22, 0.7, 0.24, 1);
+  color-scheme: light;
+}
+html[data-theme="dark"]{
+  --bg:#0b0e13; --bg-2:#0e131b; --panel:#141a24; --field:#1b2230; --field-2:#232c3d;
+  --ink:#e9eef7; --text:#bcc5d6; --muted:#8b95a8; --faint:#606a7e;
+  --line:rgba(226,234,250,.10); --line-2:rgba(226,234,250,.18);
+  --accent:#f9b15a; --accent-ink:#fbc98c; --accent-soft:rgba(249,177,90,0.16); --accent-glow:rgba(249,177,90,0.34);
+  --cta:#f9b15a; --cta-hover:#d6984d; --cta-ink:#12161c;
+  --shadow-card:0 30px 70px -34px rgba(0,0,0,.66), 0 6px 18px -10px rgba(0,0,0,.5);
+  --shadow-pop:0 24px 60px -26px rgba(0,0,0,.7);
+  color-scheme: dark;
+}
+*{ box-sizing:border-box; }
+html{ height:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+body{ margin:0; min-width:320px; height:100%; overflow:hidden; color:var(--text); background:var(--bg); font-family:var(--font); font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; color:inherit; background:none; border:none; cursor:pointer; }
+img{ display:block; max-width:100%; }
+h1,h2,h3,p{ margin:0; }
+a:focus-visible, button:focus-visible, summary:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:10px; }
+.skip{ position:absolute; left:-999px; }
+.skip:focus{ left:12px; top:12px; z-index:120; padding:9px 15px; border-radius:10px; background:var(--cta); color:var(--cta-ink); font-weight:750; }
+.bg{ position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; background:
+  radial-gradient(1100px 700px at 82% 116%, var(--bg-2), transparent 60%),
+  radial-gradient(900px 620px at -6% -8%, var(--bg-2), transparent 58%); }
+.bg::before{ content:""; position:absolute; right:-14%; bottom:-30%; width:min(92vw,940px); aspect-ratio:1; border-radius:50%;
+  background:repeating-radial-gradient(circle at center, transparent 0 86px, var(--line) 86px 87px); opacity:.5; mask:radial-gradient(circle at center, #000 62%, transparent 72%); }
+.bg::after{ content:""; position:absolute; left:-10%; top:-16%; width:min(70vw,560px); aspect-ratio:1; border-radius:50%;
+  background:repeating-radial-gradient(circle at center, transparent 0 64px, var(--line) 64px 65px); opacity:.4; mask:radial-gradient(circle at center, #000 60%, transparent 72%); }
+.topbar{ position:relative; z-index:70; flex:0 0 auto; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px clamp(16px,3.4vw,34px);
+  background:color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter:saturate(140%) blur(12px); -webkit-backdrop-filter:saturate(140%) blur(12px); border-bottom:1px solid var(--line); }
+.tb-left{ display:flex; align-items:center; gap:12px; min-width:0; }
+.hamb{ display:grid; place-items:center; width:40px; height:40px; flex:0 0 auto; position:relative; border:1px solid var(--line-2); border-radius:12px; background:var(--panel); color:var(--ink); transition:border-color .15s var(--ease); }
+.hamb:hover{ border-color:var(--accent); }
+.hamb .bar{ position:absolute; left:11px; right:11px; height:2px; border-radius:2px; background:currentColor; transition:transform .24s var(--ease), opacity .18s var(--ease); }
+.hamb .bar:nth-child(1){ top:14px; } .hamb .bar:nth-child(2){ top:19px; } .hamb .bar:nth-child(3){ top:24px; }
+body.drawer-open .hamb .bar:nth-child(1){ transform:translateY(5px) rotate(45deg); }
+body.drawer-open .hamb .bar:nth-child(2){ opacity:0; }
+body.drawer-open .hamb .bar:nth-child(3){ transform:translateY(-5px) rotate(-45deg); }
+.brand{ display:flex; align-items:center; gap:11px; min-width:0; }
+.brand-logo{ width:34px; height:34px; flex:0 0 auto; display:grid; place-items:center; border-radius:10px; background:var(--panel); box-shadow:inset 0 0 0 1px var(--line-2); }
+.brand-logo img{ width:22px; height:22px; border-radius:50%; }
+.brand-name{ font-size:19px; font-weight:820; letter-spacing:-0.03em; color:var(--ink); line-height:1.1; white-space:nowrap; }
+.tb-right{ display:flex; align-items:center; gap:9px; }
+.theme-toggle{ display:inline-flex; align-items:center; gap:2px; padding:3px; border-radius:999px; background:var(--field); box-shadow:inset 0 0 0 1px var(--line); }
+.theme-toggle button{ display:grid; place-items:center; width:30px; height:30px; border-radius:999px; color:var(--muted); transition:color .15s var(--ease), background-color .15s var(--ease); }
+.theme-toggle button svg{ width:15px; height:15px; }
+.theme-toggle button[aria-pressed="true"]{ color:var(--ink); background:var(--panel); box-shadow:0 2px 8px -3px rgba(0,0,0,.28); }
+.btn-app{ display:inline-flex; align-items:center; gap:8px; padding:9px 15px; border-radius:11px; background:var(--panel); color:var(--ink); font-size:13.5px; font-weight:700; letter-spacing:-0.01em; box-shadow:inset 0 0 0 1px var(--line-2); transition:box-shadow .15s var(--ease), transform .15s var(--ease); white-space:nowrap; }
+.btn-app svg{ width:16px; height:16px; color:var(--muted); }
+.btn-app:hover{ box-shadow:inset 0 0 0 1px var(--accent); transform:translateY(-1px); }
+.btn-app:hover svg{ color:var(--accent-ink); }
+.scrim{ position:fixed; inset:0; z-index:80; background:rgba(10,14,17,.42); opacity:0; visibility:hidden; transition:opacity .28s var(--ease), visibility .28s var(--ease); }
+body.drawer-open .scrim{ opacity:1; visibility:visible; }
+.drawer{ position:fixed; z-index:90; top:0; left:0; height:100dvh; width:300px; max-width:86vw; display:flex; flex-direction:column; padding:16px 14px 16px; background:var(--panel); border-right:1px solid var(--line); box-shadow:var(--shadow-pop);
+  transform:translateX(-104%); transition:transform .3s var(--ease); overflow-y:auto; }
+body.drawer-open .drawer{ transform:translateX(0); }
+.drawer-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:2px 6px 8px; }
+.drawer-head .brand-name{ font-size:15px; }
+.drawer-close{ display:grid; place-items:center; width:34px; height:34px; border-radius:10px; color:var(--muted); }
+.drawer-close:hover{ color:var(--ink); background:var(--field); }
+.drawer-close svg{ width:17px; height:17px; }
+.nav-label{ margin:15px 12px 6px; font-size:10px; font-weight:750; letter-spacing:0.15em; text-transform:uppercase; color:var(--faint); }
+.nav-item{ display:flex; align-items:center; gap:12px; padding:9px 12px; border-radius:10px; color:var(--text); font-size:14px; font-weight:650; transition:color .15s var(--ease), background-color .15s var(--ease); }
+.nav-item .ni-ico{ width:18px; height:18px; flex:0 0 auto; color:var(--muted); }
+.nav-item.is-active{ color:var(--accent-ink); background:var(--accent-soft); }
+.nav-item.is-active .ni-ico{ color:var(--accent-ink); }
+.nav-item:hover{ color:var(--ink); background:var(--field); }
+.nav-group{ border-radius:10px; }
+.nav-group summary{ display:flex; align-items:center; gap:12px; padding:9px 12px; border-radius:10px; color:var(--text); font-size:14px; font-weight:650; cursor:pointer; list-style:none; transition:color .15s var(--ease), background-color .15s var(--ease); }
+.nav-group summary::-webkit-details-marker{ display:none; }
+.nav-group summary .ni-ico{ width:18px; height:18px; flex:0 0 auto; color:var(--muted); }
+.nav-group summary .chev{ width:15px; height:15px; margin-left:auto; color:var(--faint); transition:transform .2s var(--ease); }
+.nav-group summary:hover{ color:var(--ink); background:var(--field); }
+.nav-group[open] summary{ color:var(--ink); }
+.nav-group[open] summary .chev{ transform:rotate(180deg); }
+.nav-sub{ display:flex; flex-direction:column; gap:1px; padding:2px 0 8px 42px; }
+.nav-sub a{ display:flex; align-items:baseline; gap:7px; padding:6px 10px; border-radius:8px; color:var(--muted); font-size:12.5px; font-weight:550; transition:color .15s var(--ease), background-color .15s var(--ease); }
+.nav-sub a small{ color:var(--faint); font-size:10.5px; font-weight:500; }
+.nav-sub a:hover{ color:var(--accent-ink); background:var(--field); }
+.drawer-foot{ margin-top:auto; padding-top:13px; border-top:1px solid var(--line); }
+.disclose{ margin:8px 8px 0; font-size:11px; line-height:1.5; color:var(--muted); }
+.disclose strong{ color:var(--text); font-weight:750; }
+.fine{ margin:6px 8px 0; font-size:10.5px; line-height:1.45; color:var(--faint); }
+.app{ height:100dvh; display:flex; flex-direction:column; overflow:hidden; position:relative; z-index:1; }
+.wrap{ flex:1 1 auto; min-height:0; display:grid; place-items:center; overflow:hidden; }
+.stage{ width:100%; max-width:560px; max-height:100%; margin-inline:auto; padding:clamp(14px,3vh,36px) clamp(16px,3.4vw,26px); display:flex; flex-direction:column; align-items:center; text-align:center; }
+.lead{ margin:0 0 clamp(13px,2.2vh,20px); max-width:24ch; font-size:clamp(19px,2.5vw,27px); line-height:1.16; letter-spacing:-0.025em; font-weight:750; color:var(--ink); }
+.lead .hl{ color:var(--accent-ink); }
+.hero-chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:9px; margin-top:clamp(13px,2.2vh,18px); }
+.hchip{ display:inline-flex; align-items:baseline; gap:7px; padding:8px 13px; border-radius:12px; background:var(--panel); box-shadow:inset 0 0 0 1px var(--line); font-size:12px; font-weight:600; color:var(--muted); transition:box-shadow .15s var(--ease), color .15s var(--ease); }
+.hchip b{ color:var(--ink); font-family:var(--mono); font-size:12.5px; font-weight:650; font-variant-numeric:tabular-nums; }
+.hchip .ext{ color:var(--faint); font-size:10px; }
+a.hchip:hover{ box-shadow:inset 0 0 0 1px var(--accent); color:var(--text); }
+a.hchip:hover .ext{ color:var(--accent-ink); }
+.swap-card{ position:relative; width:min(480px,100%); border-radius:28px; background:var(--panel); padding:clamp(20px,4vw,30px); text-align:left; box-shadow:var(--shadow-card); }
+.card-head{ display:flex; align-items:center; justify-content:space-between; margin:2px 4px 17px; }
+.card-title{ font-size:15px; font-weight:800; letter-spacing:-0.02em; color:var(--ink); }
+.badge{ display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; color:var(--accent-ink); background:var(--accent-soft); font-size:10px; font-weight:750; letter-spacing:0.07em; text-transform:uppercase; }
+.badge i{ width:6px; height:6px; border-radius:50%; background:var(--accent); }
+.field{ position:relative; padding:17px 18px 18px; border-radius:19px; background:var(--field); }
+.field + .field{ margin-top:6px; }
+.field-top{ display:flex; align-items:center; justify-content:space-between; }
+.field-label{ font-size:12px; font-weight:600; color:var(--muted); }
+.field-bal{ font-size:11px; font-weight:600; color:var(--faint); }
+.field-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:11px; min-width:0; }
+.amount{ min-width:0; }
+.amount b{ display:block; font-size:clamp(29px,5vw,38px); font-weight:750; line-height:1; letter-spacing:-0.02em; color:var(--ink); font-variant-numeric:tabular-nums; }
+.amount span{ display:block; margin-top:6px; font-size:11px; font-weight:600; color:var(--faint); }
+.token-pill{ display:inline-flex; align-items:center; gap:10px; flex:0 0 auto; padding:7px 12px 7px 8px; border-radius:999px; background:var(--panel); box-shadow:0 4px 14px -8px rgba(0,0,0,.4), inset 0 0 0 1px var(--line); transition:box-shadow .15s var(--ease); }
+.token-pill:hover{ box-shadow:0 6px 18px -8px rgba(0,0,0,.42), inset 0 0 0 1px var(--line-2); }
+.token-pill img{ width:26px; height:26px; flex:0 0 auto; border-radius:50%; }
+.token-meta{ display:flex; flex-direction:column; line-height:1.05; min-width:0; }
+.token-meta small{ font-size:9.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--faint); }
+.token-meta b{ font-size:15px; font-weight:800; letter-spacing:-0.01em; color:var(--ink); white-space:nowrap; }
+.token-pill .chev{ width:14px; height:14px; flex:0 0 auto; color:var(--faint); }
+.reverse{ position:relative; z-index:2; display:grid; place-items:center; width:40px; height:40px; margin:-14px auto; border:4px solid var(--panel); border-radius:13px; background:var(--field-2); color:var(--muted); box-shadow:0 6px 16px -8px rgba(0,0,0,.4); transition:transform .28s var(--ease), color .15s var(--ease), background-color .15s var(--ease); }
+.reverse svg{ width:16px; height:16px; }
+.reverse:hover{ color:var(--cta-ink); background:var(--accent); transform:rotate(180deg); }
+.details-btn{ display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:12px; padding:12px; border-radius:14px; background:var(--field); color:var(--muted); font-size:12px; font-weight:750; letter-spacing:0.06em; text-transform:uppercase; transition:color .15s var(--ease), background-color .15s var(--ease); }
+.details-btn svg{ width:14px; height:14px; transition:transform .2s var(--ease); }
+.details-btn:hover{ color:var(--ink); }
+.details-btn[aria-expanded="true"] svg{ transform:rotate(180deg); }
+.details{ overflow:hidden; max-height:0; opacity:0; transition:max-height .3s var(--ease), opacity .22s var(--ease), margin .3s var(--ease); }
+.details.open{ max-height:280px; opacity:1; margin-top:6px; }
+.d-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 8px; border-bottom:1px solid var(--line); }
+.d-row:last-child{ border-bottom:0; }
+.d-row span{ font-size:12.5px; font-weight:600; color:var(--muted); }
+.d-row b{ font-size:12.5px; font-weight:700; color:var(--text); }
+.d-row b.ok{ color:var(--accent-ink); }
+.d-row b.mono{ font-family:var(--mono); font-size:11px; }
+.cta{ display:flex; align-items:center; justify-content:center; gap:8px; margin-top:12px; padding:16px; border-radius:16px; background:var(--cta); color:var(--cta-ink); font-size:15px; font-weight:800; letter-spacing:0.03em; text-transform:uppercase; box-shadow:0 16px 34px -16px rgba(0,0,0,.5); transition:background-color .15s var(--ease), transform .15s var(--ease); }
+.cta svg{ width:16px; height:16px; }
+.cta:hover{ background:var(--cta-hover); transform:translateY(-1px); }
+.card-note{ margin:13px 4px 0; font-size:11px; line-height:1.5; color:var(--faint); text-align:center; }
+.card-note a{ color:var(--muted); text-decoration:underline; text-decoration-color:var(--line-2); text-underline-offset:2px; }
+.card-note a:hover{ color:var(--accent-ink); }
+@media (max-width:560px){
+  .brand-name{ font-size:16px; } .btn-app span{ display:none; } .btn-app{ padding:9px 11px; }
+  .stage{ padding:12px 16px; }
+  .lead{ font-size:clamp(18px,5.5vw,24px); margin-bottom:14px; }
+  .swap-card{ padding:18px; } .field{ padding:14px 15px 15px; } .amount b{ font-size:29px; }
+  .hero-chips{ margin-top:12px; }
+}
+@media (max-height:700px){ .lead{ font-size:clamp(17px,4.5vw,21px); margin-bottom:10px; } .hero-chips{ display:none; } }
+@media (max-height:600px){ .field{ padding:12px 15px 13px; } .amount b{ font-size:26px; } .details-btn{ margin-top:8px; padding:9px; } .cta{ padding:14px; margin-top:8px; } }
+@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
   </style>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <div class="bg" aria-hidden="true"><div class="glow"></div><div class="grid"></div></div>
+  <a class="skip" href="#route-preview">Skip to preview</a>
+  <div class="bg" aria-hidden="true"></div>
 
+  <div class="app">
   <header class="topbar">
-    <a class="brand" href="./">
-      <img src="favicon.png" width="30" height="30" alt="">
-      <span>Swap WBTC</span>
-    </a>
-    <span class="spacer"></span>
-    <nav class="nav" aria-label="Main Navigation">
-      <a href="how-it-works/">How it works</a>
-      <a href="faq/">FAQ</a>
-      <a href="about/">About</a>
-      <a href="security/">Security</a>
-      <a href="supported-chains/">Supported Chains</a>
-    </nav>
+    <div class="tb-left">
+      <button class="hamb" type="button" id="hamb" aria-label="Open navigation" aria-controls="drawer" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <div class="brand"><span class="brand-logo"><img src="favicon.png" width="22" height="22" alt="Swap WBTC logo"></span><h1 class="brand-name">Swap WBTC</h1></div>
+    </div>
+    <div class="tb-right">
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" id="theme-light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg></button>
+        <button type="button" id="theme-dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a6.5 6.5 0 1 0 10.5 10.5z"/></svg></button>
+      </div>
+      <a class="btn-app" href="dashboard/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M16 11h2"/></svg><span>Open app</span></a>
+    </div>
   </header>
 
-  <main>
-    <section class="wrap hero">
-      <div class="copy">
-        <span class="eyebrow"><span class="dot"></span>Wrapped Bitcoin Swap</span>
-        <h1>Swap WBTC</h1>
-        <p class="deck">Swap WBTC to move <a class="cite" href="https://wbtc.network/" rel="nofollow noopener noreferrer">Wrapped Bitcoin</a> into the asset you need without handing custody to an exchange. Compare live routes, connect your wallet, and confirm only when the quote works for you.</p>
-        <ul class="chips">
-          <li>Non-custodial</li>
-          <li>Live route review</li>
-          <li>Wallet-native</li>
-          <li>No sign-up</li>
-        </ul>
-        <div class="cta-row">
-          <a class="primary" href="dashboard/">
-            Open App
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a class="ghost" href="how-it-works/">
-            How it works
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <section class="card" aria-label="Swap preview">
-        <div class="card-head">
-          <span class="ct">Swap</span>
-          <span class="pill"><span class="pdot"></span>Preview</span>
-        </div>
-        <div class="field">
-          <span class="flabel">From</span>
-          <div class="frow">
-            <button class="tokpill" type="button"><img src="eth.png" alt="ETH">ETH <span class="cv" aria-hidden="true">&#9662;</span></button>
-            <span class="ghostval">Amount in app</span>
-          </div>
-        </div>
-        <div class="route">
-          <button class="switch" type="button" data-switch aria-label="Switch direction">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
-          </button>
-        </div>
-        <div class="field">
-          <span class="flabel">To</span>
-          <div class="frow">
-            <button class="tokpill" type="button"><img src="btc.png" alt="WBTC">WBTC <span class="cv" aria-hidden="true">&#9662;</span></button>
-            <span class="ghostval">Live quote in app</span>
-          </div>
-        </div>
-        <div class="meta-strip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5v5l3 3"/></svg>
-          Route, price impact, and network cost are shown in the app.
-        </div>
-        <a class="cta" href="dashboard/">Open App</a>
-        <p class="note">Preview only &middot; non-custodial &middot; connect your wallet in the app</p>
-      </section>
-    </section>
-
-    <section class="wrap sec" id="how">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>How it works</span>
-        <h2 class="h2">Swap WBTC in three steps</h2>
-        <p>WBTC brings <a class="cite" href="https://bitcoin.org/en/" rel="nofollow noopener noreferrer">Bitcoin</a> value into DeFi, while the swap flow keeps the trade inside your wallet from route selection to signature.</p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <span class="num">Step 01</span>
-          <h3>Connect your wallet</h3>
-          <p>Open the app and connect the wallet holding ETH, WBTC, or another supported asset. You stay in control of permissions and signatures.</p>
-        </div>
-        <div class="step">
-          <span class="num">Step 02</span>
-          <h3>Choose the WBTC route</h3>
-          <p>Select WBTC as the asset to receive or sell, then review the live quote, route, slippage settings, and destination asset before taking action.</p>
-        </div>
-        <div class="step">
-          <span class="num">Step 03</span>
-          <h3>Sign and track</h3>
-          <p>Confirm the swap in your wallet and follow the transaction status on-chain. The app shows the final output after the network processes the trade.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="why">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>Why swap here</span>
-        <h2 class="h2">Built for WBTC traders who want control</h2>
-      </div>
-      <div class="benefits">
-        <div class="ben">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
-          <h3>Non-custodial execution</h3>
-          <p>Use your own <a class="cite" href="https://metamask.io/" rel="nofollow noopener noreferrer">self-custody wallet</a> for every approval and swap. There is no exchange account and no deposit step.</p>
-        </div>
-        <div class="ben">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
-          <h3>DeFi-ready assets</h3>
-          <p>Trade between WBTC, ETH, and other assets used across <a class="cite" href="https://ethereum.org/en/defi/" rel="nofollow noopener noreferrer">Ethereum DeFi</a>, then move into the position you actually want.</p>
-        </div>
-        <div class="ben">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9"/><path d="M3 12h6l2-3 2 6 2-3h2"/></svg></span>
-          <h3>Clear pre-trade review</h3>
-          <p>See the live quote, route details, token approval, and network cost before you sign. Nothing leaves your wallet until you confirm.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="faq">
-      <div class="faq">
-        <aside class="faq-aside">
-          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .8-1 1.7M12 17h.01"/></svg>Got questions?</span>
-          <h2 class="h2">Swap WBTC FAQ</h2>
-          <p>The essentials on trading Wrapped Bitcoin through a non-custodial app, including assets, timing, costs, and safety checks.</p>
-          <a class="primary" href="dashboard/">Open App
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </aside>
-        <div class="faq-list">
-          <div class="qa">
-            <span class="qn">01</span>
-            <h3>What is Swap WBTC?</h3>
-            <p>Swap WBTC is a wallet-native DeFi flow for trading Wrapped Bitcoin into ETH or another supported token, or swapping into WBTC when you want Bitcoin-linked exposure on smart-contract networks.</p>
-          </div>
-          <div class="qa">
-            <span class="qn">02</span>
-            <h3>How does a WBTC swap work?</h3>
-            <p>You connect a wallet, choose the token pair, review the route, and sign the transaction. Swaps may use decentralized liquidity, including <a class="cite" href="https://uniswap.org/" rel="nofollow noopener noreferrer">automated market maker</a> pools, depending on the route shown in the app.</p>
-          </div>
-          <div class="qa">
-            <span class="qn">03</span>
-            <h3>Which chains and assets are supported?</h3>
-            <p>The app is built for major DeFi assets such as WBTC and ETH, with available networks shown at quote time. See the <a href="supported-chains/">supported chains</a> page for the broader coverage area.</p>
-          </div>
-          <div class="qa">
-            <span class="qn">04</span>
-            <h3>How long does a WBTC swap take?</h3>
-            <p>Timing depends on the network, wallet confirmation, liquidity route, and block processing. The app shows the current transaction state after you sign.</p>
-          </div>
-          <div class="qa">
-            <span class="qn">05</span>
-            <h3>What does it cost, and is it safe?</h3>
-            <p>You review the quote, price impact, approval, and <a class="cite" href="https://etherscan.io/gastracker" rel="nofollow noopener noreferrer">network gas</a> before confirming. Safety still depends on checking the token, wallet prompt, route, and final output before you sign.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="more">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>Learn more</span>
-        <h2 class="h2">Explore Swap WBTC</h2>
-      </div>
-      <div class="related">
-        <a class="rel" href="how-it-works/">
-          <span class="rt">How it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-          <p>The full walkthrough of quote review, wallet confirmation, and swap tracking.</p>
-        </a>
-        <a class="rel" href="security/">
-          <span class="rt">Security <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-          <p>How self-custody, token approvals, and wallet prompts affect every WBTC swap.</p>
-        </a>
-        <a class="rel" href="supported-chains/">
-          <span class="rt">Supported chains <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-          <p>The networks and asset routes available for WBTC swaps inside the app.</p>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      
+  <div class="scrim" id="scrim" tabindex="-1"></div>
+  <aside class="drawer" id="drawer" aria-label="Primary" aria-hidden="true">
+    <div class="drawer-head">
+      <div class="brand"><span class="brand-logo"><img src="favicon.png" width="22" height="22" alt=""></span><span class="brand-name">Swap WBTC</span></div>
+      <button class="drawer-close" type="button" id="drawer-close" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
-  </footer>
+    <nav aria-label="Sections">
+      <p class="nav-label">Bridge</p>
+      <a class="nav-item is-active" href="#route-preview" aria-current="page"><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 10h11l-3-3M17 14H6l3 3"/></svg>Route preview</a>
+      <p class="nav-label">Understand</p>
+      <details class="nav-group" open><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>WBTC fundamentals<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism" target="_blank" rel="noopener noreferrer">Mint and burn mechanism <small>Official issuance workflow</small></a><a href="https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf" target="_blank" rel="noopener noreferrer">Wrapped Tokens whitepaper <small>Original wrapped-token design</small></a><a href="https://ethereum.org/guides/how-to-swap-tokens/" target="_blank" rel="noopener noreferrer">Ethereum token swaps <small>Ethereum swap walkthrough</small></a></div></details>
+      <p class="nav-label">Markets &amp; data</p>
+      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Track WBTC<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://www.coingecko.com/en/coins/wrapped-bitcoin" target="_blank" rel="noopener noreferrer">WBTC market data <small>CoinGecko asset record</small></a><a href="https://defillama.com/protocol/wbtc" target="_blank" rel="noopener noreferrer">WBTC protocol TVL <small>DeFiLlama protocol record</small></a><a href="https://eth.blockscout.com/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" target="_blank" rel="noopener noreferrer">WBTC contract explorer <small>Ethereum token activity</small></a></div></details>
+      <p class="nav-label">Guides</p>
+      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Get or redeem WBTC<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://docs.wbtc.network/using-wbtc/where-to-get-wbtc" target="_blank" rel="noopener noreferrer">Where to get WBTC <small>Official venue overview</small></a><a href="https://docs.wbtc.network/using-wbtc/how-to-convert-btc-to-wbtc" target="_blank" rel="noopener noreferrer">Convert BTC to WBTC <small>Official wrapping routes</small></a><a href="https://docs.wbtc.network/using-wbtc/how-to-convert-wbtc-to-btc" target="_blank" rel="noopener noreferrer">Convert WBTC to BTC <small>Official redemption routes</small></a></div></details>
+      <p class="nav-label">Safety</p>
+      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Verify before swapping<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://docs.wbtc.network/overview/proof-of-reserve-and-transparency-dashboard" target="_blank" rel="noopener noreferrer">Proof of reserve <small>On-chain backing dashboard</small></a><a href="https://www.chainsecurity.com/security-audit/wrapped-bitcoin-wbtc" target="_blank" rel="noopener noreferrer">WBTC security audit <small>Independent Ethereum audit</small></a><a href="https://github.com/solana-labs/wbtc" target="_blank" rel="noopener noreferrer">Solana WBTC source <small>Audited Solana program</small></a></div></details>
+    </nav>
+    <div class="drawer-foot">
+      <p class="disclose"><strong>Independent dashboard.</strong> Not affiliated with any protocol or issuer named here.</p>
+      <p class="fine">Live figures come from public third-party sources and change. Educational reference only.</p>
+    </div>
+  </aside>
 
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"WebSite","@id":"https://swap-wbtc.github.io/#website","url":"https://swap-wbtc.github.io/","name":"Swap WBTC"},
-    {"@type":"Organization","@id":"https://swap-wbtc.github.io/#org","name":"Swap WBTC","url":"https://swap-wbtc.github.io/","logo":"https://swap-wbtc.github.io/favicon.png"},
-    {"@type":"WebApplication","name":"Swap WBTC","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://swap-wbtc.github.io/","browserRequirements":"Requires a Web3 wallet","description":"Non-custodial DeFi app for swapping WBTC with live route review and wallet-native confirmation."},
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is Swap WBTC?","acceptedAnswer":{"@type":"Answer","text":"Swap WBTC is a wallet-native DeFi flow for trading Wrapped Bitcoin into ETH or another supported token, or swapping into WBTC when you want Bitcoin-linked exposure on smart-contract networks."}},
-      {"@type":"Question","name":"How does a WBTC swap work?","acceptedAnswer":{"@type":"Answer","text":"You connect a wallet, choose the token pair, review the route, and sign the transaction. Swaps may use decentralized liquidity depending on the route shown in the app."}},
-      {"@type":"Question","name":"Which chains and assets are supported?","acceptedAnswer":{"@type":"Answer","text":"The app is built for major DeFi assets such as WBTC and ETH, with available networks shown at quote time. See the supported chains page for the broader coverage area."}},
-      {"@type":"Question","name":"How long does a WBTC swap take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on the network, wallet confirmation, liquidity route, and block processing. The app shows the current transaction state after you sign."}},
-      {"@type":"Question","name":"What does it cost, and is it safe?","acceptedAnswer":{"@type":"Answer","text":"You review the quote, price impact, approval, and network gas before confirming. Safety still depends on checking the token, wallet prompt, route, and final output before you sign."}}
-    ]}
-  ]}
-  </script>
+  <div class="wrap">
+    <main class="stage">
+      <h2 class="lead">Swap <span class="hl">WBTC</span> on-chain</h2>
+      <div class="swap-card" id="route-preview" aria-label="Swap WBTC preview">
+          <div class="card-head"><span class="card-title">Swap WBTC on Ethereum</span><span class="badge"><i aria-hidden="true"></i> Preview</span></div>
+          <div class="field">
+            <div class="field-top"><span class="field-label">You send</span><span class="field-bal">Illustrative</span></div>
+            <div class="field-row"><div class="amount"><b>1.00</b><span id="sub-from">on ETH</span></div>
+              <span class="token-pill" id="pill-from"><img src="eth.png" alt="Ethereum (ETH) logo" width="26" height="26"><span class="token-meta"><small>From</small><b>ETH</b></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></div>
+          </div>
+          <button class="reverse" type="button" id="reverse" aria-label="Reverse direction" title="Reverse direction"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 4v13M8 4L4 8M8 4l4 4M16 20V7M16 20l-4-4M16 20l4-4"/></svg></button>
+          <div class="field">
+            <div class="field-top"><span class="field-label">You receive</span><span class="field-bal">minus gas</span></div>
+            <div class="field-row"><div class="amount"><b>≈ 1.00</b><span id="sub-to">on WBTC</span></div>
+              <span class="token-pill" id="pill-to"><img src="btc.png" alt="Wrapped Bitcoin (WBTC) logo" width="26" height="26"><span class="token-meta"><small>To</small><b>WBTC</b></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></div>
+          </div>
+          <button class="details-btn" type="button" id="details-btn" aria-expanded="false" aria-controls="details">Show details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="details" id="details">
+            <div class="d-row"><span>Standard</span><b>ERC-20</b></div>
+            <div class="d-row"><span>Backing</span><b>1 WBTC = 1 BTC</b></div>
+            <div class="d-row"><span>Decimals</span><b>8</b></div>
+            <div class="d-row"><span>Ethereum contract</span><b>0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599</b></div>
+          </div>
+          <a class="cta" href="dashboard/" target="_blank" rel="noopener noreferrer">Open app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          
+      </div>
+      <div class="hero-chips">
+        <a class="hchip" href="https://www.coingecko.com/en/coins/wrapped-bitcoin" target="_blank" rel="noopener noreferrer">WBTC price <b id="sig0">—</b> <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="hchip" href="https://defillama.com/protocol/wbtc" target="_blank" rel="noopener noreferrer">WBTC TVL <b id="sig1">—</b> <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="hchip" href="https://ethereum-rpc.publicnode.com" target="_blank" rel="noopener noreferrer">Ethereum gas <b id="sig2">—</b> <span class="ext" aria-hidden="true">↗</span></a>
+      </div>
+    </main>
+  </div>
+  </div>
 
   <script>
   (function(){
     "use strict";
-    var b=document.querySelector("[data-switch]");
-    if(!b) return;
-    b.addEventListener("click",function(){
-      var p=document.querySelectorAll(".card .tokpill");
-      if(p.length<2) return;
-      var t=p[0].innerHTML; p[0].innerHTML=p[1].innerHTML; p[1].innerHTML=t;
-    });
-  }());
+    var $=function(id){ return document.getElementById(id); };
+    var root=document.documentElement, tl=$("theme-light"), td=$("theme-dark");
+    function applyTheme(t){ if(t==="dark"){ root.setAttribute("data-theme","dark"); } else { root.removeAttribute("data-theme"); } if(tl) tl.setAttribute("aria-pressed", String(t!=="dark")); if(td) td.setAttribute("aria-pressed", String(t==="dark")); }
+    var saved=null; try{ saved=localStorage.getItem("swapwbtc-theme"); }catch(e){}
+    if(saved) applyTheme(saved);
+    function setTheme(t){ applyTheme(t); try{ localStorage.setItem("swapwbtc-theme", t); }catch(e){} }
+    if(tl) tl.addEventListener("click", function(){ setTheme("light"); });
+    if(td) td.addEventListener("click", function(){ setTheme("dark"); });
+    var body=document.body, hamb=$("hamb"), scrim=$("scrim"), drawer=$("drawer"), dclose=$("drawer-close");
+    function openD(){ body.classList.add("drawer-open"); hamb.setAttribute("aria-expanded","true"); drawer.setAttribute("aria-hidden","false"); }
+    function closeD(){ body.classList.remove("drawer-open"); hamb.setAttribute("aria-expanded","false"); drawer.setAttribute("aria-hidden","true"); }
+    if(hamb) hamb.addEventListener("click", function(){ body.classList.contains("drawer-open")?closeD():openD(); });
+    if(scrim) scrim.addEventListener("click", closeD);
+    if(dclose) dclose.addEventListener("click", closeD);
+    document.addEventListener("keydown", function(e){ if(e.key==="Escape" && body.classList.contains("drawer-open")) closeD(); });
+    if(drawer) drawer.addEventListener("click", function(e){ if(e.target.closest("a")) closeD(); });
+    var reversed=false;
+    var TOK={ A:{img:"eth.png",name:"ETH",sub:"on ETH",alt:"Ethereum (ETH) logo"}, B:{img:"btc.png",name:"WBTC",sub:"on WBTC",alt:"Wrapped Bitcoin (WBTC) logo"} };
+    var chev='<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+    function pill(role,k){ var n=TOK[k]; return '<img src="'+n.img+'" alt="'+n.alt+'" width="26" height="26"><span class="token-meta"><small>'+role+'</small><b>'+n.name+'</b></span>'+chev; }
+    function render(){ var a=reversed?"B":"A", b=reversed?"A":"B"; $("pill-from").innerHTML=pill("From",a); $("pill-to").innerHTML=pill("To",b); $("sub-from").textContent=TOK[a].sub; $("sub-to").textContent=TOK[b].sub; }
+    var rev=$("reverse"); if(rev) rev.addEventListener("click", function(){ reversed=!reversed; render(); });
+    var db=$("details-btn"), dp=$("details");
+    if(db&&dp) db.addEventListener("click", function(){ var open=dp.classList.toggle("open"); db.setAttribute("aria-expanded", String(open)); db.firstChild.textContent = open?"Hide details ":"Show details "; });
+    function money(n){ if(n>=1e9) return "$"+(n/1e9).toFixed(2)+"B"; if(n>=1e6) return "$"+(n/1e6).toFixed(1)+"M"; if(n>=1e3) return "$"+(n/1e3).toFixed(0)+"K"; return "$"+n.toFixed(0); }
+    function gwei(g){ return (g>=0.1?g.toFixed(2):(g>=0.001?g.toFixed(3):Number(g.toPrecision(2)).toString()))+" gwei"; }
+    function grab(url,opt){ var c="AbortController" in window ? new AbortController():null, t=c?setTimeout(function(){c.abort();},7000):null; var o=opt||{}; if(c) o.signal=c.signal; return fetch(url,o).then(function(r){ if(!r.ok) throw 0; return r.json(); }).finally(function(){ if(t) clearTimeout(t); }); }
+    grab("https://coins.llama.fi/prices/current/coingecko:wrapped-bitcoin").then(function(j){ var c=j&&j.coins&&j.coins["coingecko:wrapped-bitcoin"], v=c&&Number(c.price); if(isFinite(v)&&v>0) $("sig0").textContent="$"+v.toLocaleString("en-US",{maximumFractionDigits:2}); }).catch(function(){});
+    grab("https://api.llama.fi/protocol/wbtc").then(function(j){ var a=j&&j.tvl; if(!a||!a.length) return; var last=a[a.length-1], v=Number(last.totalLiquidityUSD!=null?last.totalLiquidityUSD:last.tvl); if(isFinite(v)&&v>0) $("sig1").textContent=money(v); }).catch(function(){});
+    grab("https://ethereum-rpc.publicnode.com",{ method:"POST", headers:{"Content-Type":"application/json"}, body:'{"jsonrpc":"2.0","id":1,"method":"eth_gasPrice","params":[]}' }).then(function(j){ var wei=j&&j.result?parseInt(j.result,16):NaN; if(isFinite(wei)&&wei>0) $("sig2").textContent=gwei(wei/1e9); }).catch(function(){});
+  })();
   </script>
 </body>
 </html>
