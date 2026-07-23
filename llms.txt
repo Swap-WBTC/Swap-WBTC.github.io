@@ -1,55 +1,31 @@
 # Swap WBTC
-> Swap WBTC is an independent informational dashboard for understanding wallet-native exchanges involving Wrapped Bitcoin without depositing assets into a custodial exchange.
 
-## What is Swap WBTC
-Swap WBTC means exchanging WBTC for another supported token, or acquiring WBTC with another token. WBTC is a multichain representation of Bitcoin backed 1:1 by BTC held by authorized custodians. A same-chain WBTC swap uses decentralized liquidity and does not itself mint, burn, or redeem WBTC. Converting WBTC into native BTC requires a separate redemption, exchange, or cross-chain service. The dashboard is informational; execution occurs through the linked app and the user’s wallet.
-
-## How it works
-1. Connect a compatible self-custody wallet and select the correct network.
-2. Choose WBTC as the input or output asset, enter an amount, and review the route, expected output, price impact, slippage limit, and fees.
-3. When spending WBTC on an EVM network, authorize the router with a token-approval transaction if sufficient allowance does not already exist.
-4. Sign the swap transaction; an on-chain router executes against one or more liquidity pools and sends the output to the specified wallet.
-5. Track confirmation on the relevant explorer. Native-BTC delivery or movement between chains requires an additional bridge, redemption, or exchange flow.
+> Swap WBTC from your own wallet: exchange Wrapped Bitcoin for another token on-chain, no deposit into a centralized exchange required.
 
 ## Key facts
-- WBTC uses custodial BTC backing even when the trading interface is non-custodial.
-- On Ethereum Mainnet, chain ID 1, WBTC is an ERC-20 token with 8 decimals.
-- The Ethereum WBTC contract is `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`.
-- WBTC exists on multiple networks; addresses and implementations are chain-specific.
-- Users must hold the network’s native gas token, such as ETH on Ethereum.
-- Swap cost can include gas, token approval, liquidity-provider or route fees, price impact, and any disclosed interface fee.
-- Same-chain swaps settle after the required transaction or transactions confirm.
-- The minimum-received setting protects against execution beyond the chosen slippage tolerance.
-- The dashboard never needs a seed phrase or private key.
+- Token: WBTC — Wrapped Bitcoin, an ERC-20 representation of BTC
+- Backing / peg: 1:1, backed by BTC held by authorized custodians
+- Convert: Acquire via a swap or merchant; redeem through a separate redemption, exchange, or cross-chain flow
+- Networks: Ethereum Mainnet (chain ID 1) and multiple other chains, each with its own contract
+- Costs: Native gas token, plus pool/route fees, price impact, and any disclosed interface fee
+- Verify: Check the contract address, not the ticker — Ethereum WBTC is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
 
-## Common questions
-- **Is Swap WBTC custodial?** No. The dashboard does not hold funds, while the connected wallet authorizes execution. WBTC itself still depends on custodians holding the backing BTC.
-- **Is swapping WBTC safe?** Verify the domain, network, token contract, spender, allowance, route, and minimum received. Principal risks include malicious approvals, counterfeit tokens, smart-contract failure, MEV, slippage, low liquidity, bridge failure, and WBTC custody or peg failure.
-- **What fees will I pay?** Review gas, approval cost, route or pool fees, price impact, and any interface fee in the live quote.
-- **How long does it take?** Wallet approval and network confirmation determine timing. Cross-chain or native-BTC conversion takes additional steps.
-- **Which assets and chains are supported?** The execution app shows current availability at quote time; never assume that identically named WBTC tokens share a contract.
-- **How do I start?** Use a compatible wallet, keep native gas available, verify WBTC’s contract, review the quote, approve only the necessary amount, and sign.
-- **Can I swap WBTC directly for BTC?** Not through an ordinary same-chain token swap. Native BTC requires a supported redemption, exchange, or cross-chain route.
+## On this page
+- [What is Swap WBTC?](https://swap-wbtc.github.io/#what)
+- [Getting in and out](https://swap-wbtc.github.io/#wrap)
+- [Swapping it on a DEX](https://swap-wbtc.github.io/#swap)
+- [The token vs its native asset](https://swap-wbtc.github.io/#vs)
+- [Costs and gas](https://swap-wbtc.github.io/#fees)
+- [Is Swap WBTC safe?](https://swap-wbtc.github.io/#safety)
+- [Problems and fixes](https://swap-wbtc.github.io/#troubleshoot)
+- [FAQ](https://swap-wbtc.github.io/#faq)
 
 ## App
-- Dashboard: https://swap-wbtc.github.io/
-- App: https://swap-wbtc.github.io/dashboard/
+- [Swap WBTC dashboard](https://swap-wbtc.github.io/)
+- [Open the app](https://swap-wbtc.github.io/dashboard/)
 
-## Official resources
-WBTC Website: https://wbtc.network/
-WBTC Documentation: https://docs.wbtc.network/
-WBTC Proof of Reserves: https://wbtc.network/transparency
-WBTC FAQ: https://wbtc.network/faq
-Wrapped Tokens Whitepaper: https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf
-Solana WBTC Audit: https://wbtc.network/assets/ChainSecurity_WBTC_Solana_WBTC_audit.pdf
-WBTC Official X: https://x.com/WrappedBTC
-
-## Data & references
-Ethereum WBTC Contract: https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
-CoinGecko WBTC Data: https://www.coingecko.com/en/coins/wrapped-bitcoin
-DeFiLlama WBTC Data: https://defillama.com/token/WBTC
-ERC-20 Standard: https://eips.ethereum.org/EIPS/eip-20
-Ethereum Mainnet Chain ID: https://eips.ethereum.org/EIPS/eip-2228
-Ethereum DEX Overview: https://ethereum.org/get-eth/
-Uniswap DEX Explainer: https://blog.uniswap.org/what-is-a-decentralized-exchange
-WBTC on Wikipedia: https://en.wikipedia.org/wiki/WBTC
+## Sources
+- [docs.wbtc.network](https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism)
+- [wbtc.network](https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf)
+- [ethereum.org](https://ethereum.org/guides/how-to-swap-tokens/)
+- [coingecko.com](https://www.coingecko.com/en/coins/wrapped-bitcoin)

@@ -1,0 +1,19 @@
+{
+  "name": "Swap WBTC",
+  "short_name": "Swap WBTC",
+  "description": "Swap WBTC directly from a self-custody wallet. How Wrapped Bitcoin works, what a same-chain swap costs, how to verify the real contract, and how to get back to BTC.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
