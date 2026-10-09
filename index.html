@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -116,7 +116,7 @@ h1 em{color:var(--accent);font-style:normal}
 .cad2dc3::-webkit-details-marker{display:none}
 .cad2dc3::after{content:"+";flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font:400 1.25rem/1 var(--body)}
 .c6a4889[open]{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
-.c6a4889[open]>.cad2dc3::after{content:"в€’"}
+.c6a4889[open]>.cad2dc3::after{content:"−"}
 .cb70b4f{padding:0 2.8rem 1.3rem 0;color:var(--muted);line-height:1.85;overflow-wrap:anywhere}
 .cb70b4f p{margin:.25rem 0 .75rem}
 .c9612b7{display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2.5rem 0;border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent)}
@@ -137,7 +137,7 @@ h1 em{color:var(--accent);font-style:normal}
 <div class="c8a8c6a">
 <nav class="caecc5d" aria-label="Main navigation">
 <a class="cbdb76c" href="#hero"><span class="c63c200" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg></span>Compare</a>
-<div class="c4548b4"><a href="#facts">Key facts</a><a href="#guide">Guide</a><a href="#sources">Sources</a><a class="c433d98" href="dashboard/">Open app в†—</a></div>
+<div class="c4548b4"><a href="#facts">Key facts</a><a href="#guide">Guide</a><a href="#sources">Sources</a><a class="c433d98" href="dashboard/">Open app ↗</a></div>
 </nav>
 <div class="cc23f2e"><nav class="c4ee64f" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Wrapping</span> <span>/</span> <span>Swap WBTC</span></nav></div>
 <section class="cfed4e3" id="hero" aria-labelledby="hero-title">
@@ -158,18 +158,18 @@ h1 em{color:var(--accent);font-style:normal}
 </div>
 <label class="c559090" for="amount">Amount</label>
 <div class="c532cdf"><input id="amount" type="number" inputmode="decimal" min="1" max="1000000000" step="0.01" value="1000" aria-describedby="amount-hint amount-error"><span>units</span></div>
-<p class="cea7e47" id="amount-hint">Enter 1вЂ“1,000,000,000 units, up to 2 decimal places.</p>
+<p class="cea7e47" id="amount-hint">Enter 1–1,000,000,000 units, up to 2 decimal places.</p>
 <p class="c7e39fb" id="amount-error" hidden></p>
 <div class="c7decc6" role="status" aria-live="polite" aria-atomic="true">
 <span class="cf337b5">Estimated amount received</span>
-<output class="c0176e7" id="received" for="amount">вЂ”</output>
+<output class="c0176e7" id="received" for="amount">—</output>
 <div class="c4a18fc">
-<div><span class="c959fa8">Estimated fee</span><output class="ce8ce1c" id="fee" for="amount">вЂ”</output></div>
-<div><span class="c959fa8">Estimated time</span><output class="ce8ce1c" id="time" for="amount">вЂ”</output></div>
+<div><span class="c959fa8">Estimated fee</span><output class="ce8ce1c" id="fee" for="amount">—</output></div>
+<div><span class="c959fa8">Estimated time</span><output class="ce8ce1c" id="time" for="amount">—</output></div>
 </div>
 </div>
 <a class="c4339b9" href="dashboard/">Continue <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-<details class="cbe1b31"><summary>How the estimate is calculated</summary><p>Fee = 0.5 units + 0.35% of the amount, rounded to 2 decimals. Amount received = amount в€’ fee. Time = 2 minutes + 1 minute per 10,000 units, rounded up.</p></details>
+<details class="cbe1b31"><summary>How the estimate is calculated</summary><p>Fee = 0.5 units + 0.35% of the amount, rounded to 2 decimals. Amount received = amount − fee. Time = 2 minutes + 1 minute per 10,000 units, rounded up.</p></details>
 <noscript><p class="cea7e47">Enable JavaScript to calculate fees and timing.</p></noscript>
 </div>
 </aside>
@@ -215,9 +215,9 @@ h1 em{color:var(--accent);font-style:normal}
     error.hidden = valid;
     error.textContent = valid ? '' : 'Enter an amount from 1 to 1,000,000,000 with up to 2 decimal places.';
     if (!valid) {
-      received.textContent = 'вЂ”';
-      fee.textContent = 'вЂ”';
-      time.textContent = 'вЂ”';
+      received.textContent = '—';
+      fee.textContent = '—';
+      time.textContent = '—';
       return;
     }
     const amountCents = Math.round(value * 100);
